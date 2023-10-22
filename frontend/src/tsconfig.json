@@ -1,0 +1,6 @@
+{
+     "include": [
+    "src/**/*.ts",
+    "./custom.d.ts" // Add custom.d.ts to the include array
+  ]
+}

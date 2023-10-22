@@ -1,0 +1,240 @@
+
+div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 91.5vh;
+    padding: 10px;
+}
+
+/* Style the MyChats component */
+.MyChats {
+    flex: 1;
+    /* Adjust the width as needed */
+}
+
+
+.Chatbox {
+    flex: 1;
+    /* Adjust the width as needed */
+}
+
+/* chatbox.css */
+
+/* Style the container for Chatbox */
+.chatbox-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    /* Adjust the padding as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    /* Adjust the width as needed */
+}
+
+/* Style the SingleChat component within Chatbox */
+.single-chat {
+    width: 100%;
+    /* Adjust the width as needed */
+}
+
+/* Add responsive styles for different screen sizes */
+@media (min-width: 768px) {
+
+    /* Adjust styles for medium screens (md) */
+    .chatbox-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 68%;
+        /* Adjust the width as needed */
+    }
+}
+
+
+/* mychats.css */
+
+/* Style the container for MyChats */
+.mychats-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    /* Adjust the padding as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    /* Adjust the width as needed */
+}
+
+/* Style the chat list container */
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    /* Adjust the padding as needed */
+    background-color: #F8F8F8;
+    width: 100%;
+    /* Adjust the width as needed */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Style individual chat items in the list */
+.chat-item {
+    display: flex;
+    cursor: pointer;
+    padding: 8px;
+    /* Adjust the padding as needed */
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s;
+}
+
+.chat-item:hover {
+    background-color: #38B2AC;
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+
+    /* Adjust styles for medium screens (md) */
+    .mychats-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 31%;
+        /* Adjust the width as needed */
+    }
+
+    .chat-list {
+        flex-direction: column;
+    }
+}
+
+/* //---------------------------------- */
+
+/* singlechat.css */
+
+/* Style the container for SingleChat */
+.singlechat-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8E8E8;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Style the chat header */
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-header .back-button {
+    display: flex;
+}
+
+.chat-header .back-button .arrow-icon {
+    cursor: pointer;
+}
+
+.chat-header .chat-info {
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.chat-header .chat-info .chat-title {
+    font-size: 30px;
+    font-family: "Work Sans";
+}
+
+.chat-header .chat-info .profile-modal {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.chat-header .chat-info .profile-modal:hover {
+    text-decoration: underline;
+}
+
+/* Style the chat messages container */
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+    background-color: #E8E8E8;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Style the chat input area */
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #E8E8E8;
+    width: 100%;
+    border-radius: 8px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input .typing-animation {
+    margin-bottom: 15px;
+    margin-left: 0;
+    /* Add Lottie animation styles here */
+}
+
+.chat-input .message-input {
+    flex-grow: 1;
+    background-color: #E0E0E0;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.chat-input .message-input::placeholder {
+    color: #888;
+}
+
+/* Style the send button */
+.send-button {
+    background-color: #38B2AC;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #2c948b;
+}
+
+/* Add responsive styles for different screen sizes */
+@media (min-width: 768px) {
+
+    /* Adjust styles for medium screens (md) */
+    .singlechat-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 68%;
+    }
+}
